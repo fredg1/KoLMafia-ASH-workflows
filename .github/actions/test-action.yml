@@ -12,5 +12,5 @@ runs:
         python-version: 3.8
     - shell: python
       run: |
-        input = [${{ env.input_test-input }}]
+        input = '${{ env.input_test-input }}'.split(',')
         print(input)
