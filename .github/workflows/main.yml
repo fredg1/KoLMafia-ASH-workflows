@@ -7,6 +7,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: test-step
-      uses: ./.github/actions/test-action
+      uses: ./.github/actions
       with:
         test-input: abc,cde,fgh
