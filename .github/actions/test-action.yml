@@ -1,0 +1,16 @@
+name: test-action
+inputs:
+  test-input:
+    description: 'for test'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - shell: python
+      run: |
+        input = [${{ env.input_test-input }}]
+        print(input)

@@ -1,0 +1,12 @@
+name: test
+on: workflow_dispatch
+
+jobs:
+  test-action:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: test-step
+      uses: ./.github/actions/test-action
+      with:
+        test-input: 'abc','cde','fgh'
