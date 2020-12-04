@@ -9,4 +9,4 @@ jobs:
     - name: test-step
       uses: ./.github/actions/test-action
       with:
-        test-input: 'abc','cde','fgh'
+        test-input: abc,cde,fgh
