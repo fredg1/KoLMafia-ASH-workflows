@@ -6,8 +6,12 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: test-step
-      run: echo ${{ github.event_path }}
----
+      &BB id: test-id
+      run: &AA echo ${{ github.event_path }}
+    - name: anchor-test
+      *BB : another-test-id
+      run: *AA
+...
 name: test_2
 on: workflow_dispatch
 
