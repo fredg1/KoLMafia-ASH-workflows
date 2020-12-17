@@ -1,0 +1,9 @@
+name: test
+on: workflow_dispatch
+
+jobs:
+  test-action:
+    runs-on: windows-latest
+    steps:
+    - name: test-step
+      run: echo ${{ github.event_path }}
