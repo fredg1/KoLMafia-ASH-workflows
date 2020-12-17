@@ -9,13 +9,7 @@ jobs:
       run: &AA echo ${{ github.event_path }}
     - name: anchor-test
       run: *AA
-...
-name: test_5
-on: workflow_dispatch
-
-jobs:
-  job_id:
-    runs-on: windows-latest
-    steps
-    - name: test-step
-      run: echo TEST
+    - name: test again
+      &BB run: echo 'a'
+    - name: test again again
+      *BB : echo 'a'
