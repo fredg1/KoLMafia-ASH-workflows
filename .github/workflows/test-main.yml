@@ -12,7 +12,7 @@ jobs:
       *BB : another-test-id
       run: *AA
 ...
-name: test_2
+name: test_5
 on: workflow_dispatch
 
 jobs:
