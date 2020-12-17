@@ -7,3 +7,13 @@ jobs:
     steps:
     - name: test-step
       run: echo ${{ github.event_path }}
+---
+name: test_2
+on: workflow_dispatch
+
+jobs:
+  job_id:
+    runs-on: windows-latest
+    steps
+    - name: test-step
+      run: echo TEST
