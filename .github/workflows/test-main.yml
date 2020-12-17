@@ -10,6 +10,4 @@ jobs:
     - name: anchor-test
       run: *AA
     - name: test again
-      &BB run: echo 'a'
-    - name: test again again
-      *BB : echo 'a'
+      run: echo 'a'
