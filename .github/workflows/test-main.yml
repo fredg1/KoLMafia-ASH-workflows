@@ -13,7 +13,7 @@ jobs:
       &BB run: echo 'a'
     - name: test again again
       *BB
-...
+---
 name: test_5
 on: workflow_dispatch
 
