@@ -6,4 +6,12 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: &a test-step
-      run: echo ${{ github.event_path }}
+      shell   : python
+      run: 'print("""
+        aaaa
+        vbbb
+        
+        
+        
+        
+        292929""")'
